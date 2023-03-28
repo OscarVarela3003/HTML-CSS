@@ -26,7 +26,7 @@ body {
   line-height: 140px;
 }
 
-.container > aside {
+.container .flexbox-container aside {
   width: 270px;
   height: 450px;
   background: #1d7a1d;
@@ -56,4 +56,11 @@ body {
 }
 /* 2 estilos de posiciones de caja  */
 /* Flex box manipula los elementos para alinearlos mas dinamicamente */
-/* Dos maneras de utilizar flexbox horizontal y vertical */
+.container .flexbox-container {
+  /* Display ajusta los elementos que abarcan toda la pantalla o una parte de ella */
+
+  display: flex;
+  /* aplica a todos los hijos la misma cantidad entre ellos. */
+  /* justify-content: space-between; */
+  gap: 20px;
+}
