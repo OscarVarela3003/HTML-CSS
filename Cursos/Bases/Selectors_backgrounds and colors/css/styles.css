@@ -1,0 +1,105 @@
+/*  SELECTORS*/
+/* Universal */
+* {
+  color: white;
+}
+/*TAG*/
+body {
+  background-color: gray;
+}
+h1 {
+  background-color: purple;
+  border: 5px dashed green;
+  font-size: 40px;
+  /* Espaciado interno */
+  padding: 10px;
+}
+/* Id */
+#first-menu li a {
+  color: rgb(88, 19, 19);
+  font-size: 20px;
+  text-decoration: none;
+}
+#lorem-container {
+  border: 7px solid black;
+  padding: 20px;
+}
+
+#lorem-container h2 {
+  background-color: green;
+  padding: 25px;
+}
+#lorem-container h3 {
+  padding: 25px;
+  font-weight: normal;
+}
+#lorem-container h4 {
+  color: black;
+  background-color: orange;
+  padding: 25px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#contact-form {
+  border: 8px solid black;
+  padding: 25px;
+  margin-top: 15px;
+}
+#contact-form input[type="submit"] {
+  background-color: green;
+  padding: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+/* Class */
+.form-element label {
+  /* display: inline; */
+  /* Ocupa solo que necesita */
+  /* display: block este ocupa todo el tamaño de la pantalla */
+  display: block;
+  font-size: 18px;
+}
+
+.about-us p {
+  padding: 17px;
+  font-size: 45px;
+  background-color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+.about-us h5 a {
+  color: red;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.about-us h5 {
+  color: black;
+  font-size: 17px;
+}
+/* Attribute */
+
+.form-element input[type="text"] {
+  padding: 10px;
+  color: black;
+}
+
+/* .form-element input[placeholder="Escribe tu nombre"] {
+  padding: 15px;
+  color: black; }*/
+
+/* Children */
+#first-menu > li > a {
+  color: red;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#first-menu > li > ul > li > a {
+  color: green;
+  font-size: 24px;
+  text-decoration: none;
+}

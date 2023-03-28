@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+
+  /* background-color: red; */
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /* Alinear horizontalmente */
+
+  margin: 0 auto;
+
+  /*Margin: ARRIBA DERECHA ABAJO IZQUIERDA*/
+  /* margin: 10px 20px 30px 40px; */
+  /* margin-left: auto;
+margin-right: auto; */
+
+  /* Centrar contenido del elemento verticalmente igual a height*/
+  line-height: 50px;
+  text-align: center;
+  /* 
+Alinear verticalmente */
+}
+
+section {
+  min-width: 50px;
+  max-width: 50px;
+  /* height: 50px; */
+  min-height: 100px;
+  max-height: 300px;
+  background-color: blue;
+  margin: 0 auto;
+  margin-top: 0 auto;
+}
