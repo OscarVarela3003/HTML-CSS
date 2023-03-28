@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #7d7dff;
+  margin: 10px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffff;
+
+  /* Used to round container edges */
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+main .title {
+  background-color: #cb6d6d;
+  width: 500px;
+  /* MARGIN 0 AUTO PARA CENTRAR AL PADRE */
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+}
+
+main .flex-justify-content {
+  background-color: #cb6d6d;
+  display: flex;
+  /* Centrar todo en el contenedor con la siguiente propiedad para centrar a los hijos*/
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+
+  /* NEW PROPERTIES */
+  /* FLEX-WRAP */
+  flex-wrap: wrap;
+  /* GAP */
+  gap: 20px;
+  /* column-gap: 10px; */
+  /* overflow: hidden; */
+}
+
+main .child {
+  width: 300px;
+  height: 200px;
+  background-color: #7d7dff;
+  /* margin: 0 auto; se usa para centrar a las etiquetas padre */
+  text-align: center;
+  margin-top: 20px;
+  line-height: 200px;
+}
+
+main .Flex-Align-Items {
+  margin-top: 20px;
+  height: 900px;
+  background-color: #cb6d6d;
+  display: flex;
+  /* justify-content: space space-between; */
+
+  flex-wrap: wrap;
+  gap: 15px;
+  /* ALINEAR ELEMENTOS VERTICALMENTE */
+  align-items: center;
+  /* align-items: end; */
+  /* align-items: start; */
+}
