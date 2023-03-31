@@ -20,7 +20,7 @@ header {
 main .title {
   background-color: #cb6d6d;
   width: 500px;
-  /* MARGIN 0 AUTO PARA CENTRAR AL PADRE */
+  /* MARGIN 0 AUTO We use this property to align parent labels*/
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
@@ -51,13 +51,18 @@ main .flex-justify-content {
 }
 
 main .child {
-  width: 300px;
-  height: 200px;
+  min-width: 100px;
+  /* height: 200px; */
   background-color: #7d7dff;
-  /* margin: 0 auto; se usa para centrar a las etiquetas padre */
+  /* margin: 0 auto; is used to align father labels*/
   text-align: center;
   margin-top: 20px;
-  line-height: 200px;
+  /* line-height: 200px; */
+  /* reminder the properties works to complement each other*/
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .Flex-Align-Items {
@@ -73,4 +78,77 @@ main .Flex-Align-Items {
   align-items: center;
   /* align-items: end; */
   /* align-items: start; */
+}
+
+/* FLEX PARENT PROPERTIES */
+/* dispay: flex 
+justify-content
+align-items
+gap
+flex-wrap
+flex-direction*/
+
+/* FLEX-DIRECTION*/
+
+main .Flex-direction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  background-color: #cb6d6d;
+  /* flex-direction: column; */
+  flex-flow: row wrap;
+  /* THE LABEL PROPERTY ABOVE IS EQUIVALENT TO USE THE PROPERTIES COMMENTED BELOW  */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+
+  display: flex;
+
+  /* justify-content: space space-between; */
+
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  /* ALINEAR ELEMENTOS VERTICALMENTE */
+  align-items: start;
+  /* align-items: end; */
+  /* align-items: start; */
+}
+
+/* Let's use properties to modify children properties */
+
+main .flex-child {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main .flex-child .grow {
+  /* FLEX-CHILD PROPERTIES */
+
+  /* 
+  flex-grow
+flex-shrink
+flex-basis  
+  */
+  /* integer value to make the label take more space */
+  width: unset;
+  flex-grow: 3;
+  background-color: red;
+}
+
+main .shrink {
+  /* it reduces spaces to the label this property is applied to making other labels to increase its width*/
+  width: unset;
+  flex-shrink: 8;
+  background-color: blue;
+}
+
+main .basis {
+  width: unset;
+  flex-basis: 500px;
+}
+main .flex {
+  width: unset;
+  flex: 1 1 250px;
 }
