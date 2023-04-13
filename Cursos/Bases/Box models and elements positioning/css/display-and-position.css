@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.property-section {
+  /* max-width: 1000px; */
+  width: 80%;
+  margin: 0 auto;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  border: 1px solid #1414ff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  min-height: 200px;
+}
+.property-section .section-title {
+  text-align: center;
+  background-color: #333;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px dashed #1414ff;
+}
+.property-section-content {
+  margin-top: 15px;
+  background-color: #3a3a3a;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #510b0b;
+  display: flex;
+  gap: 12px;
+}
+
+.property-section-content .container {
+  background-color: #1c4b1c;
+  border-radius: 5px;
+  /* width: 56px; */
+  height: 56px;
+  border: 2px solid #510b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-section-content .d-none {
+  /* It make the label to disappeare from the HTMl Document  */
+  display: none;
+}
+.property-section-content .d-flex {
+  display: flex;
+}
+.property-section-content .d-block {
+  /* It makes that element to use all the space in the html document */
+  display: block;
+}
+
+.property-section-content .d-inline {
+  /* use what it need to fit the text */
+  display: inline;
+  /* margin: 30px;
+  padding: 10px; */
+}
+.property-section-content .d-inline-block {
+  display: inline-block;
+
+  margin: 30px;
+  padding: 10px;
+}
