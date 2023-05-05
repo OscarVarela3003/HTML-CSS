@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  max-width: 1200px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.page-container header {
+  background-color: #4343d8;
+  padding: 22px;
+}
+
+.page-container header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+}
+
+.page-container nav {
+  background-color: #ccc;
+  /* padding: 20px; Do not apply padding to the container parent, apply it to a container children */
+  /* WORKAROUND 2 Using FLEXBOX to place items to each other */
+  display: flex;
+}
+
+.page-container nav a {
+  /* display:inline-block; WORKAROUND 1 to place items next to each other */
+  text-decoration: none;
+  border: 1px solid #a4a4a4;
+  padding: 12px;
+  color: #4343d8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: size 16px;
+}
+.title-container {
+  border: 1px solid #333;
+  padding: 12px;
+}
+
+.title-container h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  text-shadow: 0 0 5px #450000;
+}
+.article-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.article-group article {
+  background-color: brown;
+  /* it applies to the children the size they are going to use */
+  flex-basis: 45%;
+  min-height: 200px;
+  border-radius: 40px 20px 20px 40px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

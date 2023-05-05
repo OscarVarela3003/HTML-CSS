@@ -74,3 +74,43 @@ body {
   margin: 30px;
   padding: 10px;
 }
+.position-group {
+  min-height: 300px;
+  /* It makes  */
+
+  position: relative;
+}
+
+.position-group .relative {
+  /* it make the element to move whereever you need it */
+
+  position: relative;
+  /* Top = moves element from top to bottom
+  left = moves element from left to right
+  right = Moves element from right to left
+  Bottom. Moves element from bottom to top.
+
+  Position property unblocks sub-properties above
+  */
+  position: relative;
+
+  /* how to ovelap one element to other.  */
+  z-index: 1;
+  /* top: 50px;
+  left: 50px; */
+}
+
+.position-group .absolute {
+  /* absolute makes the content to place itself to the closest parent you'd want */
+  position: absolute;
+
+  /* top: 150px;
+  left: 150px; */
+}
+
+.position-group .fixed {
+  position: fixed;
+
+  top: 100px;
+  left: 100px;
+}
